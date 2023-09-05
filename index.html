@@ -50,7 +50,7 @@
     <!-- hero section end -->
 
     <!-- Navbar start -->
-    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+    <nav class="navbar navbar-expand-md bg-transparent fixed-top mynavbar">
       <div class="container">
         <a class="navbar-brand" href="#">MWS</a>
         <button
@@ -368,7 +368,7 @@
         </div>
 
         <div
-          class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center"
+          class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center myfoto"
         >
           <div class="col mt-3">
             <a
@@ -661,7 +661,7 @@
       });
     </script>
 
-    <script>
+    <!-- <script>
       const stickyTop = document.querySelector('.sticky-top');
       const offcanvas = document.querySelector('.offcanvas');
 
@@ -672,7 +672,7 @@
       offcanvas.addEventListener('hidden.bs.offcanvas', function () {
         stickyTop.style.overflow = 'hidden';
       });
-    </script>
+    </script> -->
 
     <script>
       const rootElement = document.querySelector(':root');
@@ -749,7 +749,7 @@
       const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
       const namaContainer = document.querySelector('.hero h4 span');
       namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
-
+      // penerapan index.html?p=Bpk&n=Wahyu%20Siregar
       document.querySelector('#nama').value = nama;
     </script>
   </body>
